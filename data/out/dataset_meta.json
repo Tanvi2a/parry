@@ -1,0 +1,29 @@
+{
+  "anchor": "2026-09-03T12:00:00+05:30",
+  "avg_amount_rs": 2504,
+  "content_sha256": "b7345b9ab6f7a05c81b96f19a9e343f4a023fbf01f8c341aaed13f13e3435d55",
+  "flipped": 15,
+  "n": 200,
+  "near_deadline": 5,
+  "past_deadline": 1,
+  "pod_lost_to_noise": 16,
+  "reason_codes": {
+    "RC-DUP": 19,
+    "RC-FRAUD": 89,
+    "RC-INR": 56,
+    "RC-NAD": 36
+  },
+  "seed": 42,
+  "split": {
+    "test": 60,
+    "train": 140
+  },
+  "truth_mix": {
+    "ambiguous": 17,
+    "delivery_failure": 31,
+    "friendly_fraud": 75,
+    "genuine_fraud": 55,
+    "merchant_error": 22
+  },
+  "winnable": 95
+}
