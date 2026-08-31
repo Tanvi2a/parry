@@ -1,0 +1,10 @@
+# Wired into the engine in Phase 4. Values are the defaults we agreed.
+cost_to_fight_paise: 65000        # network fee + ops cost per contested case
+auto_submit_cap_paise: 500000     # Rs 5,000 -- above this, human required
+p_win_floor: 0.75                 # auto-submit confidence floor
+abstain_band: [0.45, 0.60]        # inside this, route to human regardless
+completeness_floor: 0.8           # auto-submit evidence floor
+seed: 42                          # every random call takes this
+llm:
+  transcripts_model: gemini-3.5-flash-lite   # confirmed working — your test just used it
+  mining_model: gemini-3.5-flash             # same family, full-strength reader for L2
