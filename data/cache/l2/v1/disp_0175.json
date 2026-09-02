@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0175",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "tracking not updating for my laptop backpack order, pls cehck",
+      "source": "customer",
+      "ts": 1785299400,
+      "type": "knowledge_of_order",
+      "explanation": "The customer explicitly inquires about their order for the 'laptop backpack', directly contradicting the claim that they did not authorize or recognize the transaction/order."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"tracking not updating for my laptop backpack order, pls cehck\", \"source\": \"customer\", \"ts\": 1785299400, \"type\": \"knowledge_of_order\", \"explanation\": \"The customer explicitly inquires about their order for the 'laptop backpack', directly contradicting the claim that they did not authorize or recognize the transaction/order.\"}]}"
+}

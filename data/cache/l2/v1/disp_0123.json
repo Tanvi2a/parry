@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0123",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "got my parcel today. can I return mixer grinder? fitting is not good",
+      "source": "customer",
+      "ts": 1787059800,
+      "type": "delivery_acknowledgement",
+      "explanation": "The customer explicitly states they received the parcel and asks to return the mixer grinder, directly contradicting the claim that they never received the item."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"got my parcel today. can I return mixer grinder? fitting is not good\", \"source\": \"customer\", \"ts\": 1787059800, \"type\": \"delivery_acknowledgement\", \"explanation\": \"The customer explicitly states they received the parcel and asks to return the mixer grinder, directly contradicting the claim that they never received the item.\"}]}"
+}

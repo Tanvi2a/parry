@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0083",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "please expedite delivery of my table lamp, need it for a function",
+      "source": "customer",
+      "ts": 1785807000,
+      "type": "knowledge_of_order",
+      "explanation": "The customer acknowledges placing the order for the table lamp and requests expedited delivery, which directly contradicts the claim that they did not authorize the transaction or recognize the order."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"please expedite delivery of my table lamp, need it for a function\", \"source\": \"customer\", \"ts\": 1785807000, \"type\": \"knowledge_of_order\", \"explanation\": \"The customer acknowledges placing the order for the table lamp and requests expedited delivery, which directly contradicts the claim that they did not authorize the transaction or recognize the order.\"}]}"
+}

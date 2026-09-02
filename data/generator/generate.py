@@ -43,6 +43,7 @@ def generate(n=200, seed=42, db_path=None, anchor_iso=DEFAULT_ANCHOR,
         labeler.label(rng, c)
 
     # ---- stratified split by reason code: exactly `test_size` held-out ----
+    test_size = min(test_size, max(1, int(round(n * 0.3))))
     by_rc = collections.defaultdict(list)
     for c in cases:
         by_rc[c["rc"]].append(c["i"])

@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0027",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "tracking not updating for my yoga mat order, pls check",
+      "source": "customer",
+      "ts": 1785321000,
+      "type": "knowledge_of_order",
+      "explanation": "The customer explicitly refers to 'my yoga mat order', directly contradicting their claim that they did not authorize the transaction or that it is not their order."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"tracking not updating for my yoga mat order, pls check\", \"source\": \"customer\", \"ts\": 1785321000, \"type\": \"knowledge_of_order\", \"explanation\": \"The customer explicitly refers to 'my yoga mat order', directly contradicting their claim that they did not authorize the transaction or that it is not their order.\"}]}"
+}

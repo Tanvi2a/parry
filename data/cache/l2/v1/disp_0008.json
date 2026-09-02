@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0008",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "you sent me the WRONG item, I ordered smartwatch and got something else entirely",
+      "source": "customer",
+      "ts": 1785807000,
+      "type": "other",
+      "explanation": "The cardholder filed a dispute claiming the smartwatch was not as described. However, in the support chat, they explicitly state they 'got something else entirely' and did not receive the smartwatch, which contradicts the claim of possessing a smartwatch that failed to match its description."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\n  \"exhibits\": [\n    {\n      \"quote\": \"you sent me the WRONG item, I ordered smartwatch and got something else entirely\",\n      \"source\": \"customer\",\n      \"ts\": 1785807000,\n      \"type\": \"other\",\n      \"explanation\": \"The cardholder filed a dispute claiming the smartwatch was not as described. However, in the support chat, they explicitly state they 'got something else entirely' and did not receive the smartwatch, which contradicts the claim of possessing a smartwatch that failed to match its description.\"\n    }\n  ]\n}"
+}

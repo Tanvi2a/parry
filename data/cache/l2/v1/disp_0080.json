@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0080",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "received the air fryer yesterday, quality theek hai but colour photo se different lag raha",
+      "source": "customer",
+      "ts": 1787189400,
+      "type": "delivery_acknowledgement",
+      "explanation": "The customer explicitly states they received the air fryer, which directly contradicts their claim that they never received the item."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"received the air fryer yesterday, quality theek hai but colour photo se different lag raha\", \"source\": \"customer\", \"ts\": 1787189400, \"type\": \"delivery_acknowledgement\", \"explanation\": \"The customer explicitly states they received the air fryer, which directly contradicts their claim that they never received the item.\"}]}"
+}

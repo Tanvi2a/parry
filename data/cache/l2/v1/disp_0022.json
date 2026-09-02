@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0022",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "not happy with the banarasi saree, want to discuss",
+      "source": "customer",
+      "ts": 1786923000,
+      "type": "possession_admission",
+      "explanation": "The customer expresses dissatisfaction with the banarasi saree, which inherently contradicts the claim that they never received the item."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"not happy with the banarasi saree, want to discuss\", \"source\": \"customer\", \"ts\": 1786923000, \"type\": \"possession_admission\", \"explanation\": \"The customer expresses dissatisfaction with the banarasi saree, which inherently contradicts the claim that they never received the item.\"}]}"
+}

@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0141",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "received the laptop backpack yesterday, quality theek hai but colour photo se different lag raha",
+      "source": "customer",
+      "ts": 1785587400,
+      "type": "possession_admission",
+      "explanation": "The customer explicitly states they received the laptop backpack, which directly contradicts their later claim of never receiving the item."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"received the laptop backpack yesterday, quality theek hai but colour photo se different lag raha\", \"source\": \"customer\", \"ts\": 1785587400, \"type\": \"possession_admission\", \"explanation\": \"The customer explicitly states they received the laptop backpack, which directly contradicts their later claim of never receiving the item.\"}]}"
+}

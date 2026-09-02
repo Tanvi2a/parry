@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0068",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "bhai order aa gaya but bluetooth earbuds ka size chhota hai, exchange kaise karu?",
+      "source": "customer",
+      "ts": 1786271400,
+      "type": "possession_admission",
+      "explanation": "The customer explicitly states that the order has arrived ('order aa gaya') and mentions the bluetooth earbuds, directly contradicting their claim that they never received the item."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\n  \"exhibits\": [\n    {\n      \"quote\": \"bhai order aa gaya but bluetooth earbuds ka size chhota hai, exchange kaise karu?\",\n      \"source\": \"customer\",\n      \"ts\": 1786271400,\n      \"type\": \"possession_admission\",\n      \"explanation\": \"The customer explicitly states that the order has arrived ('order aa gaya') and mentions the bluetooth earbuds, directly contradicting their claim that they never received the item.\"\n    }\n  ]\n}"
+}

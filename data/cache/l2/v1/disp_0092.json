@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0092",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "when will my laptop backpack arrive? ordered last week",
+      "source": "customer",
+      "ts": 1786804200,
+      "type": "knowledge_of_order",
+      "explanation": "The customer explicitly asks about the arrival of their 'laptop backpack' and states they 'ordered last week', directly contradicting the cardholder's claim of 'I did not authorize this transaction / this is not my order'."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"when will my laptop backpack arrive? ordered last week\", \"source\": \"customer\", \"ts\": 1786804200, \"type\": \"knowledge_of_order\", \"explanation\": \"The customer explicitly asks about the arrival of their 'laptop backpack' and states they 'ordered last week', directly contradicting the cardholder's claim of 'I did not authorize this transaction / this is not my order'.\"}]}"
+}

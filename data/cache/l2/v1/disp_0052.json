@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0052",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "when will my smartwatch arrive? ordered last week",
+      "source": "customer",
+      "ts": 1787196600,
+      "type": "knowledge_of_order",
+      "explanation": "The cardholder claims they did not authorize the transaction or place the order, but the customer explicitly asks about the delivery of their smartwatch and states they ordered it last week."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"when will my smartwatch arrive? ordered last week\", \"source\": \"customer\", \"ts\": 1787196600, \"type\": \"knowledge_of_order\", \"explanation\": \"The cardholder claims they did not authorize the transaction or place the order, but the customer explicitly asks about the delivery of their smartwatch and states they ordered it last week.\"}]}"
+}

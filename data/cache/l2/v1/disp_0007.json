@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0007",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "when will my mixer grinder arrive? ordered last week",
+      "source": "customer",
+      "ts": 1786458600,
+      "type": "knowledge_of_order",
+      "explanation": "The cardholder claims they did not authorize the transaction or place the order, but in the support chat, they ask about the status of the 'mixer grinder' order, referring to it as 'my mixer grinder' and stating they 'ordered last week'. This demonstrates active knowledge and authorization of the purchase."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\n  \"exhibits\": [\n    {\n      \"quote\": \"when will my mixer grinder arrive? ordered last week\",\n      \"source\": \"customer\",\n      \"ts\": 1786458600,\n      \"type\": \"knowledge_of_order\",\n      \"explanation\": \"The cardholder claims they did not authorize the transaction or place the order, but in the support chat, they ask about the status of the 'mixer grinder' order, referring to it as 'my mixer grinder' and stating they 'ordered last week'. This demonstrates active knowledge and authorization of the purchase.\"\n    }\n  ]\n}"
+}

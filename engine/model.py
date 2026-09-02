@@ -16,10 +16,12 @@ from sklearn.model_selection import cross_val_predict
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 import db  # noqa: E402
 from engine.checklists import completeness  # noqa: E402
+from engine.contradictions import cached_count  # noqa: E402
 from engine.features import FEATURES, extract  # noqa: E402
 from engine.retrieve import case_file  # noqa: E402
 
 MODEL_PATH = pathlib.Path("data/out/model.joblib")
+MODEL_PATH_NO_L2 = pathlib.Path("data/out/model_no_l2.joblib")
 
 
 def train(db_path=None, out_path=MODEL_PATH):
@@ -37,13 +39,15 @@ def train(db_path=None, out_path=MODEL_PATH):
     rc_base_rates["__overall__"] = round(
         sum(w for _, w, _ in rows) / len(rows), 4)
 
-    X, y = [], []
+    X, X0, y = [], [], []
     for did, w, _ in rows:
         cf = case_file(con, did)
         c, _bd = completeness(cf)
-        X.append(extract(cf, c, rc_base_rates, contradiction_count=0))
+        X.append(extract(cf, c, rc_base_rates,
+                         contradiction_count=cached_count(did)))
+        X0.append(extract(cf, c, rc_base_rates, contradiction_count=0))
         y.append(w)
-    X, y = np.array(X), np.array(y)
+    X, X0, y = np.array(X), np.array(X0), np.array(y)
 
     # calibration check: 5-fold cross-validated probabilities
     cv_p = cross_val_predict(LogisticRegression(max_iter=1000), X, y,
@@ -59,10 +63,13 @@ def train(db_path=None, out_path=MODEL_PATH):
     acc = float(((cv_p >= 0.5).astype(int) == y).mean())
 
     final = LogisticRegression(max_iter=1000).fit(X, y)
-    bundle = dict(model=final, rc_base_rates=rc_base_rates,
-                  features=FEATURES, n_train=len(y))
+    final0 = LogisticRegression(max_iter=1000).fit(X0, y)
     pathlib.Path(out_path).parent.mkdir(parents=True, exist_ok=True)
-    joblib.dump(bundle, out_path)
+    joblib.dump(dict(model=final, rc_base_rates=rc_base_rates,
+                     features=FEATURES, n_train=len(y)), out_path)
+    joblib.dump(dict(model=final0, rc_base_rates=rc_base_rates,
+                     features=FEATURES, n_train=len(y)),
+                pathlib.Path(out_path).parent / MODEL_PATH_NO_L2.name)
 
     report = dict(
         n_train=len(y), features=FEATURES,
@@ -71,6 +78,9 @@ def train(db_path=None, out_path=MODEL_PATH):
         intercept=round(float(final.intercept_[0]), 3),
         rc_base_rates=rc_base_rates,
         cv_accuracy_at_0p5=round(acc, 3),
+        ablation_no_l2_coefficients={
+            f: round(float(c), 3)
+            for f, c in zip(FEATURES, final0.coef_[0])},
         calibration_buckets=buckets,
         saved_to=str(out_path),
     )

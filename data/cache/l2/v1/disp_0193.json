@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0193",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "bhai order aa gaya but running shoes ka size chhota hai, exchange kaise karu?",
+      "source": "customer",
+      "ts": 1787499000,
+      "type": "delivery_acknowledgement",
+      "explanation": "The customer explicitly states that the order has arrived and mentions the running shoes have a small size, directly contradicting the claim that the item was never received."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"bhai order aa gaya but running shoes ka size chhota hai, exchange kaise karu?\", \"source\": \"customer\", \"ts\": 1787499000, \"type\": \"delivery_acknowledgement\", \"explanation\": \"The customer explicitly states that the order has arrived and mentions the running shoes have a small size, directly contradicting the claim that the item was never received.\"}]}"
+}

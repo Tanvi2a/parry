@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0119",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "bhai order aa gaya but phone case ka size chhota hai, exchange kaise karu?",
+      "source": "customer",
+      "ts": 1785940200,
+      "type": "possession_admission",
+      "explanation": "The customer explicitly states that the order has arrived ('order aa gaya') and complains about the size of the phone case, directly contradicting their claim that they never received the item."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"bhai order aa gaya but phone case ka size chhota hai, exchange kaise karu?\", \"source\": \"customer\", \"ts\": 1785940200, \"type\": \"possession_admission\", \"explanation\": \"The customer explicitly states that the order has arrived ('order aa gaya') and complains about the size of the phone case, directly contradicting their claim that they never received the item.\"}]}"
+}

@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0087",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "got my parcel today. can I return yoga mat? fitting is not good",
+      "source": "customer",
+      "ts": 1785623400,
+      "type": "possession_admission",
+      "explanation": "The customer admits to receiving the parcel and the yoga mat, directly contradicting the claim that they never received the item."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"got my parcel today. can I return yoga mat? fitting is not good\", \"source\": \"customer\", \"ts\": 1785623400, \"type\": \"possession_admission\", \"explanation\": \"The customer admits to receiving the parcel and the yoga mat, directly contradicting the claim that they never received the item.\"}]}"
+}

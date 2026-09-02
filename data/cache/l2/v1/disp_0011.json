@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0011",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "tracking not updating for my banarasi saree order, pls check",
+      "source": "customer",
+      "ts": 1787221800,
+      "type": "knowledge_of_order",
+      "explanation": "The customer proactively inquires about the tracking status of \"my banarasi saree order\", directly acknowledging ownership and authorization of the purchase, which contradicts the fraud claim."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\n  \"exhibits\": [\n    {\n      \"quote\": \"tracking not updating for my banarasi saree order, pls check\",\n      \"source\": \"customer\",\n      \"ts\": 1787221800,\n      \"type\": \"knowledge_of_order\",\n      \"explanation\": \"The customer proactively inquires about the tracking status of \\\"my banarasi saree order\\\", directly acknowledging ownership and authorization of the purchase, which contradicts the fraud claim.\"\n    }\n  ]\n}"
+}

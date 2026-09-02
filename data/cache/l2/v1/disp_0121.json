@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0121",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "not happy with the yoga mat, want to discuss",
+      "source": "customer",
+      "ts": 1787347800,
+      "type": "possession_admission",
+      "explanation": "The customer explicitly states they are unhappy with the yoga mat, demonstrating they received and possess the item, which directly contradicts their claim of 'I never received the item'."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\n  \"exhibits\": [\n    {\n      \"quote\": \"not happy with the yoga mat, want to discuss\",\n      \"source\": \"customer\",\n      \"ts\": 1787347800,\n      \"type\": \"possession_admission\",\n      \"explanation\": \"The customer explicitly states they are unhappy with the yoga mat, demonstrating they received and possess the item, which directly contradicts their claim of 'I never received the item'.\"\n    }\n  ]\n}"
+}

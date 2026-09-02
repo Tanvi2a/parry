@@ -9,6 +9,7 @@ Gate order, checked top to bottom:
   5. otherwise                     -> ACCEPT + sub-recommendation
 """
 import json
+import os
 import pathlib
 import time
 
@@ -16,26 +17,35 @@ import joblib
 
 from engine import config
 from engine.checklists import completeness
+from engine.contradictions import cached_count
 from engine.features import FEATURES, extract
 from engine.retrieve import case_file
 
 MODEL_PATH = pathlib.Path("data/out/model.joblib")
-_bundle = None
+MODEL_PATH_NO_L2 = pathlib.Path("data/out/model_no_l2.joblib")
+_bundles = {}
+
+
+def _no_l2():
+    return os.environ.get("PARRY_NO_L2") == "1"
 
 
 def reset_cache():
-    global _bundle
-    _bundle = None
+    _bundles.clear()
+
+
+def _model_path():
+    return MODEL_PATH_NO_L2 if _no_l2() else MODEL_PATH
 
 
 def _load():
-    global _bundle
-    if _bundle is None:
-        _bundle = joblib.load(MODEL_PATH)
-    return _bundle
+    key = str(_model_path())
+    if key not in _bundles:
+        _bundles[key] = joblib.load(_model_path())
+    return _bundles[key]
 
 
-def decide(con, dispute_id, now=None, contradiction_count=0):
+def decide(con, dispute_id, now=None, contradiction_count=None):
     cfg = config.load()
     now = int(now if now is not None else time.time())
     cf = case_file(con, dispute_id)
@@ -44,9 +54,11 @@ def decide(con, dispute_id, now=None, contradiction_count=0):
     d = cf["dispute"]
     A, C = d["amount"], cfg["cost_to_fight_paise"]
 
+    if contradiction_count is None:
+        contradiction_count = cached_count(dispute_id)
     core_missing = any(cf[k] is None
                        for k in ("payment", "order", "customer", "auth"))
-    if core_missing or not MODEL_PATH.exists():
+    if core_missing or not _model_path().exists():
         why = ("linked records not found -- route to human"
                if core_missing else "model not trained -- route to human")
         dec = dict(verdict="ABSTAIN", p_win=None, ev_paise=None,

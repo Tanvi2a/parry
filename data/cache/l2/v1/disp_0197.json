@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0197",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "bhai order aa gaya but yoga mat ka size chhota hai, exchange kaise karu?",
+      "source": "customer",
+      "ts": 1787315400,
+      "type": "possession_admission",
+      "explanation": "The customer explicitly states that the order has arrived ('order aa gaya') and mentions the yoga mat's size, which directly contradicts the claim of never receiving the item."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"bhai order aa gaya but yoga mat ka size chhota hai, exchange kaise karu?\", \"source\": \"customer\", \"ts\": 1787315400, \"type\": \"possession_admission\", \"explanation\": \"The customer explicitly states that the order has arrived ('order aa gaya') and mentions the yoga mat's size, which directly contradicts the claim of never receiving the item.\"}]}"
+}

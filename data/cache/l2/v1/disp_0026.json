@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0026",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "not happy with the laptop backpack, want to discuss",
+      "source": "customer",
+      "ts": 1786275000,
+      "type": "possession_admission",
+      "explanation": "The customer states they are unhappy with the laptop backpack and want to discuss it, which directly contradicts their claim that they never received the item."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"not happy with the laptop backpack, want to discuss\", \"source\": \"customer\", \"ts\": 1786275000, \"type\": \"possession_admission\", \"explanation\": \"The customer states they are unhappy with the laptop backpack and want to discuss it, which directly contradicts their claim that they never received the item.\"}]}"
+}

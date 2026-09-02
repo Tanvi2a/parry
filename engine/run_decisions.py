@@ -1,4 +1,5 @@
-"""Decide every seeded dispute (now = the dataset anchor, so the one
+"""Decide every seeded dispute.  --no-l2 mutes the contradiction feature
+(the ablation row for the eval). (now = the dataset anchor, so the one
 past-deadline case is EXPIRED on any machine, any day).
 
   python -m engine.run_decisions
@@ -44,4 +45,12 @@ def run(db_path=None):
 
 
 if __name__ == "__main__":
+    import argparse
+    import os
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--no-l2", action="store_true")
+    args = ap.parse_args()
+    if args.no_l2:
+        os.environ["PARRY_NO_L2"] = "1"
+        print("mode: ABLATION (contradiction feature muted)")
     run()

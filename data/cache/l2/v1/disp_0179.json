@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0179",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "not happy with the cotton kurta, want to discuss",
+      "source": "customer",
+      "ts": 1785954600,
+      "type": "possession_admission",
+      "explanation": "The customer admits to having the cotton kurta and expresses dissatisfaction with it, which contradicts their claim that they did not authorize the transaction or that it is not their order."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"not happy with the cotton kurta, want to discuss\", \"source\": \"customer\", \"ts\": 1785954600, \"type\": \"possession_admission\", \"explanation\": \"The customer admits to having the cotton kurta and expresses dissatisfaction with it, which contradicts their claim that they did not authorize the transaction or that it is not their order.\"}]}"
+}

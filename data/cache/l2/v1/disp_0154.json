@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0154",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "the mixer grinder is fine",
+      "source": "customer",
+      "ts": 1786674600,
+      "type": "possession_admission",
+      "explanation": "The customer explicitly states the mixer grinder is 'fine', which directly contradicts the claim that the item was not as described."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"the mixer grinder is fine\", \"source\": \"customer\", \"ts\": 1786674600, \"type\": \"possession_admission\", \"explanation\": \"The customer explicitly states the mixer grinder is 'fine', which directly contradicts the claim that the item was not as described.\"}]}"
+}

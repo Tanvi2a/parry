@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0065",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "got my parcel today. can I return banarasi saree? fitting is not good",
+      "source": "customer",
+      "ts": 1785526200,
+      "type": "possession_admission",
+      "explanation": "The customer explicitly states they received their parcel and asks to return the banarasi saree, which directly contradicts their claim that they never received the item."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\n  \"exhibits\": [\n    {\n      \"quote\": \"got my parcel today. can I return banarasi saree? fitting is not good\",\n      \"source\": \"customer\",\n      \"ts\": 1785526200,\n      \"type\": \"possession_admission\",\n      \"explanation\": \"The customer explicitly states they received their parcel and asks to return the banarasi saree, which directly contradicts their claim that they never received the item.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0017",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "bhai order aa gaya but cotton kurat ka size chhota hai, exchange kaise karu?",
+      "source": "customer",
+      "ts": 1786746600,
+      "type": "delivery_acknowledgement",
+      "explanation": "The customer explicitly acknowledges that the order arrived ('order aa gaya') and asks how to exchange it because the size is too small, directly contradicting the claim that they never received the item."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\n  \"exhibits\": [\n    {\n      \"quote\": \"bhai order aa gaya but cotton kurat ka size chhota hai, exchange kaise karu?\",\n      \"source\": \"customer\",\n      \"ts\": 1786746600,\n      \"type\": \"delivery_acknowledgement\",\n      \"explanation\": \"The customer explicitly acknowledges that the order arrived ('order aa gaya') and asks how to exchange it because the size is too small, directly contradicting the claim that they never received the item.\"\n    }\n  ]\n}"
+}

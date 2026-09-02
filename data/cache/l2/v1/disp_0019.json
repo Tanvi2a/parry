@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0019",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "when will my bluetooth earbuds arrive? ordered last week",
+      "source": "customer",
+      "ts": 1785371400,
+      "type": "knowledge_of_order",
+      "explanation": "The customer explicitly asks about the delivery status of the earbuds and states they ordered them last week, which directly contradicts the claim that they did not authorize the transaction or that it is not their order."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\n  \"exhibits\": [\n    {\n      \"quote\": \"when will my bluetooth earbuds arrive? ordered last week\",\n      \"source\": \"customer\",\n      \"ts\": 1785371400,\n      \"type\": \"knowledge_of_order\",\n      \"explanation\": \"The customer explicitly asks about the delivery status of the earbuds and states they ordered them last week, which directly contradicts the claim that they did not authorize the transaction or that it is not their order.\"\n    }\n  ]\n}"
+}

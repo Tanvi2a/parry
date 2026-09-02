@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0153",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "tracking not updating for my running shoes order, pls check",
+      "source": "customer",
+      "ts": 1786735800,
+      "type": "knowledge_of_order",
+      "explanation": "The cardholder claims they did not authorize the transaction or place the order, but this customer message proves they actively tracked the running shoes order prior to delivery."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\n  \"exhibits\": [\n    {\n      \"quote\": \"tracking not updating for my running shoes order, pls check\",\n      \"source\": \"customer\",\n      \"ts\": 1786735800,\n      \"type\": \"knowledge_of_order\",\n      \"explanation\": \"The cardholder claims they did not authorize the transaction or place the order, but this customer message proves they actively tracked the running shoes order prior to delivery.\"\n    }\n  ]\n}"
+}

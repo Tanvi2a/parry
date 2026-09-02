@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0018",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "not happy with the smartwatch, want to discuss",
+      "source": "customer",
+      "ts": 1786735800,
+      "type": "possession_admission",
+      "explanation": "The customer admits they have received the smartwatch and are unhappy with it, directly contradicting the claim that they did not authorize the transaction or that it was not their order."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\n  \"exhibits\": [\n    {\n      \"quote\": \"not happy with the smartwatch, want to discuss\",\n      \"source\": \"customer\",\n      \"ts\": 1786735800,\n      \"type\": \"possession_admission\",\n      \"explanation\": \"The customer admits they have received the smartwatch and are unhappy with it, directly contradicting the claim that they did not authorize the transaction or that it was not their order.\"\n    }\n  ]\n}"
+}

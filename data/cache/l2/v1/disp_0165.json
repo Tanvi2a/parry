@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0165",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "the ceramic dinner set is fine but I found it cheaper elsewhere, can you price matc?h",
+      "source": "customer",
+      "ts": 1785421800,
+      "type": "possession_admission",
+      "explanation": "The customer explicitly states that the ceramic dinner set is 'fine', which directly contradicts their later claim that the item was 'not as described'."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"the ceramic dinner set is fine but I found it cheaper elsewhere, can you price matc?h\", \"source\": \"customer\", \"ts\": 1785421800, \"type\": \"possession_admission\", \"explanation\": \"The customer explicitly states that the ceramic dinner set is 'fine', which directly contradicts their later claim that the item was 'not as described'.\"}]}"
+}

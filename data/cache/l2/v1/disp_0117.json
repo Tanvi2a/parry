@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0117",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "the running shoes is fine",
+      "source": "customer",
+      "ts": 1785875400,
+      "type": "possession_admission",
+      "explanation": "The customer explicitly states that the running shoes are fine, which directly contradicts their claim that the item was not as described."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"the running shoes is fine\", \"source\": \"customer\", \"ts\": 1785875400, \"type\": \"possession_admission\", \"explanation\": \"The customer explicitly states that the running shoes are fine, which directly contradicts their claim that the item was not as described.\"}]}"
+}

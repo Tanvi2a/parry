@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0189",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "tracking not updating for my ceramic dinner set order, pls check",
+      "source": "customer",
+      "ts": 1787099400,
+      "type": "knowledge_of_order",
+      "explanation": "The customer acknowledges placing an order for the ceramic dinner set before the dispute was created, contradicting the claim that they did not authorize or recognize the transaction."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"tracking not updating for my ceramic dinner set order, pls check\", \"source\": \"customer\", \"ts\": 1787099400, \"type\": \"knowledge_of_order\", \"explanation\": \"The customer acknowledges placing an order for the ceramic dinner set before the dispute was created, contradicting the claim that they did not authorize or recognize the transaction.\"}]}"
+}

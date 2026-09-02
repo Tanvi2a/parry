@@ -1,0 +1,17 @@
+{
+  "dispute_id": "disp_0094",
+  "prompt_version": "v1",
+  "model": "gemini-3.5-flash-lite",
+  "contradiction_count": 1,
+  "exhibits": [
+    {
+      "quote": "the cotton kurta is fine",
+      "source": "customer",
+      "ts": 1786102200,
+      "type": "possession_admission",
+      "explanation": "The customer explicitly states that the kurta is fine, which contradicts their subsequent claim that the item was not as described."
+    }
+  ],
+  "dropped": [],
+  "raw": "{\"exhibits\": [{\"quote\": \"the cotton kurta is fine\", \"source\": \"customer\", \"ts\": 1786102200, \"type\": \"possession_admission\", \"explanation\": \"The customer explicitly states that the kurta is fine, which contradicts their subsequent claim that the item was not as described.\"}]}"
+}

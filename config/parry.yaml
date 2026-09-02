@@ -6,5 +6,5 @@ abstain_band: [0.45, 0.60]        # inside this, route to human regardless
 completeness_floor: 0.8           # auto-submit evidence floor
 seed: 42                          # every random call takes this
 llm:
-  transcripts_model: gemini-3.5-flash-lite   # confirmed working — your test just used it
-  mining_model: gemini-3.5-flash             # same family, full-strength reader for L2
+  transcripts_model: gemini-3.5-flash-lite   # confirmed working — your test just used it            # same family, full-strength reader for L2
+  mining_model: gemini-3.5-flash-lite
