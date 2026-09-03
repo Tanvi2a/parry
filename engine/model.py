@@ -71,6 +71,7 @@ def train(db_path=None, out_path=MODEL_PATH):
                      features=FEATURES, n_train=len(y)),
                 pathlib.Path(out_path).parent / MODEL_PATH_NO_L2.name)
 
+    report_path = pathlib.Path(out_path).parent / "model_report.json"
     report = dict(
         n_train=len(y), features=FEATURES,
         coefficients={f: round(float(c), 3)
@@ -84,6 +85,7 @@ def train(db_path=None, out_path=MODEL_PATH):
         calibration_buckets=buckets,
         saved_to=str(out_path),
     )
+    report_path.write_text(json.dumps(report, indent=2))
     return report
 
 

@@ -1,0 +1,60 @@
+{
+  "n_train": 140,
+  "features": [
+    "completeness",
+    "contradictions",
+    "auth_ok",
+    "log_prior_orders",
+    "rc_base_rate"
+  ],
+  "coefficients": {
+    "completeness": 3.213,
+    "contradictions": 1.381,
+    "auth_ok": 0.186,
+    "log_prior_orders": 0.703,
+    "rc_base_rate": -0.113
+  },
+  "intercept": -3.629,
+  "rc_base_rates": {
+    "RC-INR": 0.4103,
+    "RC-FRAUD": 0.4516,
+    "RC-NAD": 0.6,
+    "RC-DUP": 0.3571,
+    "__overall__": 0.4571
+  },
+  "cv_accuracy_at_0p5": 0.9,
+  "ablation_no_l2_coefficients": {
+    "completeness": 3.945,
+    "contradictions": 0.0,
+    "auth_ok": 0.055,
+    "log_prior_orders": 1.047,
+    "rc_base_rate": -0.173
+  },
+  "calibration_buckets": [
+    {
+      "bucket": "0.00-0.25",
+      "n": 67,
+      "predicted": 0.113,
+      "actual": 0.09
+    },
+    {
+      "bucket": "0.25-0.50",
+      "n": 15,
+      "predicted": 0.404,
+      "actual": 0.267
+    },
+    {
+      "bucket": "0.50-0.75",
+      "n": 7,
+      "predicted": 0.63,
+      "actual": 0.714
+    },
+    {
+      "bucket": "0.75-1.00",
+      "n": 51,
+      "predicted": 0.892,
+      "actual": 0.961
+    }
+  ],
+  "saved_to": "data/out/model.joblib"
+}
