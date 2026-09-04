@@ -1,0 +1,36 @@
+{
+  "n_test": 60,
+  "total_winnable": 31,
+  "split_sha256": "787b0df8a0e521d05fc1d8486c78b8644b2c3cc12f344ac900c270645ad28823",
+  "evaluated_at": "2026-09-03T21:08:48",
+  "policy_note": "ABSTAIN and EXPIRED route to humans and are not counted as fights; reported separately.",
+  "cost_to_fight_rs": 650,
+  "parry": {
+    "fought": 29,
+    "auto_submitted": 23,
+    "abstained": 2,
+    "expired": 0,
+    "true_positives": 25,
+    "false_positives": 4,
+    "precision": 0.8621,
+    "recall": 0.8065,
+    "fp_cost_rs": 2600,
+    "net_rs": 43119
+  },
+  "parry_no_l2_ablation": {
+    "fought": 30,
+    "auto_submitted": 23,
+    "abstained": 2,
+    "expired": 0,
+    "true_positives": 25,
+    "false_positives": 5,
+    "precision": 0.8333,
+    "recall": 0.8065,
+    "fp_cost_rs": 3250,
+    "net_rs": 42368
+  },
+  "baselines": {
+    "accept_all_net_rs": 0,
+    "fight_all_net_rs": 39261
+  }
+}
